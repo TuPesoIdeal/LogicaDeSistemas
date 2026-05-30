@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leyes de De Morgan</title>
+
+    <!-- CONEXION CON CSS -->
+    <link rel="stylesheet" href="Tema5.css">
+   <!-- ICONOS DE FONT AWESOME -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div class="circulo-decorativo c1"></div>
+<div class="circulo-decorativo c2"></div>
+<div class="circulo-decorativo c3"></div>
+
+<header>
+<!-- LOGO -->
+         <div class="logo">
+            <img src="Logo Mariano Galve.png" alt="Logo Universidad">
+         </div>
+
+    <div class="titulo">
+    <h1>Leyes de De Morgan</h1>
+    <p>Lógica de Sistemas</p>
+    </div>
+
+     <!-- MENU -->
+        <nav class="menu">
+
+            <a href="../Inicio/Inicio.html">Inicio</a>
+
+            <!-- AL DAR CLIC BAJA A LOS TEMAS -->
+            <a href="../Inicio/Inicio.html#temas">Temas</a>
+
+            <!-- AL DAR CLIC BAJA AL CONTACTO -->
+            <a href="#contacto">Contacto</a>
+
+        </nav>
+</header>
+
+<nav> 
+    <a href="#concepto">Concepto</a>
+    <a href="#importancia">Importancia</a>
+    <a href="#primera-ley">Primera Ley</a>
+    <a href="#segunda-ley">Segunda Ley</a>
+    <a href="#aplicacion">Aplicaciones</a>
+</nav>
+
+<main>
+    <section id="concepto"> 
+        <div class="card"> 
+            <h2>¿Qué son las Leyes de De Morgan?</h2>
+            <p>Son un conjunto de reglas de transformación en la teoría de conjuntos y la lógica proposicional que posibilitan la compresión de expresiones lógicas complejas. Fueron declaradas formalmente por el matemático Augustus De Morgan y demuestran cómo la negación interactúa directamente con los conectores de unión y separación. </p>
+            <div class="formula"> ¬(p ∧ q) ≡ ¬p ∨ ¬q <br> ¬(p ∨ q) ≡ ¬p ∧ ¬q </div>
+            <p>En términos sencillos, estas leyes nos muestran la manera de distribuir o "incorporar" una negación en un paréntesis que tiene una conjunción (Y) o una disyunción (O). </p> 
+            <div class="img-container"> <img src="https://i.ytimg.com/vi/joZ4y4SkWCY/maxresdefault.jpg" width="400" </div>
+        </div>
+    </section>
+
+    <section id="importancia"> 
+        <div class="card"> 
+            <h2>¿Por qué son importantes en sistemas?</h2>
+            <p>Las Leyes de De Morgan son esenciales para la programación y el diseño de circuitos digitales si se desea optimizar el código y disminuir los costos del hardware. Facilitan el cambio de puertas lógicas complejas por combinaciones más simples y ayudan a simplificar las condiciones en el interior de sentencias condicionales (como los <code>if</code> en programación). </p>
+            <button onclick="mostrarImportancia()"> ¿Cómo ayuda a un programador? </button>
+            <p id="expImportancia" class="resultado"> </p>
+            <div class="img-container"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRl_1mM5_MoWPhHmcBehrSGLLyvZayMZ8xLig&s" width="400" > </div>
+        </div>
+    </section>
+
+    <section id="primera-ley"> 
+        <div class="card"> 
+            <h2>Primera Ley: Negación de la Conjunción</h2>
+            <p>Determina que la negación de una conjunción (intersección) equivale a la disyunción (unión) de las negaciones individuales de cada uno de los términos. En otras palabras, afirmar que dos cosas no ocurren simultáneamente es lo mismo que negar que al menos una de ellas sucederá.</p>
+            <div class="formula">En Conjuntos: (A ∩ B)' = A' ∪ B' <br>En Lógica: ¬(p ∧ q) ≡ ¬p ∨ ¬q</div>
+            <button onclick="mostrarLey1()">Ver ejemplo práctico</button>
+            <p id="expLey1" class="resultado"></p>
+            <div class="img-container"> <img src="https://es.flamath.com/wp-content/uploads/complemento-de-interseccion-diagrama-venn.png" width="400"> </div>
+        </div>
+    </section>
+
+    <section id="segunda-ley"> 
+        <div class="card"> 
+            <h2>Segunda Ley: Negación de la Disyunción</h2>
+            <p>Asegura que la negación de una disyunción (unión) es igual a la conjunción (intersección) de las negaciones de cada uno de sus términos. Negar que cualquiera de las dos opciones suceda implica, necesariamente, que ninguna de las dos debe ocurrir. </p>
+            <div class="formula">En Conjuntos: (A ∪ B)' = A' ∩ B' <br>En Lógica: ¬(p ∨ q) ≡ ¬p ∧ ¬q </div>
+            <button onclick="mostrarLey2()">Ver ejemplo práctico</button>
+            <p id="expLey2" class="resultado"></p>
+            <div class="img-container"> <img src="https://es.flamath.com/wp-content/uploads/complemento-union-de-conjuntos-diagrama-venn.png" width="400"> </div>
+        </div>
+    </section>
+
+    <section id="aplicacion"> 
+        <div class="card">
+            <h2>Resumen de Equivalencias Lógicas</h2>
+            <p>Para recordar rápidamente las leyes de De Morgan, existe una regla nemotécnica fundamental que establece que al quitar un paréntesis negado se producen simultáneamente tres cambios encadenados:</p> 
+            <div class="formula"> 1. Se niega el primer elemento. <br> 2. El conector cambia de forma (∧ se vuelve ∨, o viceversa). <br> 3. Se niega el segundo elemento. </div>
+            <button onclick="mostrarResumen()">¿Cómo se aplican en una tabla de verdad?</button>
+            <p id="expResumen" class="resultado"></p>
+            <div class="img-container"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKN6Bccbja_LRL8XO_XGIf966JJDJCiHcWxw&s" width="400"> </div>
+        </div>
+    </section>
+</main>
+
+<!-- PIE DE PAGINA -->
+      <footer id="contacto">
+
+        <!-- CONTENEDOR FOOTER -->
+        <div class="footer-contenido">
+
+            <!-- LOGO -->
+            <div class="footer-logo">
+
+                <img src="Logo Mariano Galve.png" alt="Logo">
+
+            </div>
+
+            <!-- INFORMACION GENERAL -->
+            <div class="footer-info">
+
+                <h2>Contactos</h2>
+
+                <p>Correo: logica@sistemas.com</p>
+
+                <p>Teléfono: +502 0000-0000</p>
+
+
+            </div>
+
+        </div>
+
+        <!-- PARTICIPANTES -->
+
+        <div class="integrantes">
+
+            <!-- PARTICIPANTE 1 -->
+            <div class="persona">
+
+                <h3>Nahum Gamaliel Chun Ramirez</h3>
+
+                <p>Carnet: 0903-26-9546</p>
+
+                <!-- ICONOS -->
+                <div class="redes">
+
+                    <!-- GMAIL -->
+                    <a href="mailto:Nahumfkiller.555@gmail.com">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+
+                    <!-- WHATSAPP -->
+                    <a href="https://wa.me/50230736551" target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+
+                    
+
+                    
+
+                </div>
+
+            </div>
+
+            <!-- PARTICIPANTE 2 -->
+            <div class="persona">
+
+                <h3>Milhen Josué Fuentes Velásquez</h3>
+
+                <p>Carnet: 0903-26-996</p>
+
+                <div class="redes">
+
+                    <a href="mailto:fuentesjosue064@gmail.com ">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+
+                    <a href="https://wa.me/50246036109 " target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+
+                    <a href="https://www.instagram.com/velasquez496_/" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    
+
+                </div>
+
+            </div>
+
+            <!-- PARTICIPANTE 3 -->
+            <div class="persona">
+
+                <h3>Diana Fernanda Barrios Ramírez </h3>
+
+                <p>Carnet: 0903-26-7778 </p>
+
+                <div class="redes">
+
+                    <a href="mailto:barriosramirezdianafernanda@gmail.com">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+
+                    <a href="https://wa.me/50259353308 " target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+
+                    <a href="https://www.instagram.com/fr.ch__/" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    
+
+                </div>
+
+            </div>
+
+            <!-- PARTICIPANTE 4 -->
+            <div class="persona">
+
+                <h3>Francisco Javier González Velásquez</h3>
+
+                <p>Carnet: 0903-26-3434</p>
+
+                <div class="redes">
+
+                    <a href="mailto:Javiervelazques67@gmail.com">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+
+                    <a href="https://wa.me/50232764031" target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+
+                    
+
+                </div>
+
+            </div>
+
+            <!-- PARTICIPANTE 5 -->
+            <div class="persona">
+
+                <h3>Janeth Darlyne Orozco de León 5</h3>
+
+                <p>Carnet: 0903-26-5297</p>
+
+                <div class="redes">
+
+                    <a href="mailto:Janeth@gmail.com">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+
+                    <a href="https://wa.me/50239114599" target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+
+                    <a href="https://www.instagram.com/janeth.d_o?igsh=bnVnajVhMHkydTQ5" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- PARTICIPANTE 6 -->
+            <div class="persona">
+
+                <h3>Pedro Andres Navarro Merida</h3>
+
+                <p>Carnet: 0903-26-12272</p>
+
+                <div class="redes">
+
+                    <a href="mailto:andres2007navarro@gmail.com">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+
+                    <a href="https://wa.me/50240447726" target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+
+                    <a href="https://www.instagram.com/andres_2906__/" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script src="Tema5.js"></script>
+</body>
+</html>

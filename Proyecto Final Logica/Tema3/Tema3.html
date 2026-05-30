@@ -1,0 +1,1284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Tema3.css">
+    <!-- ICONOS DE FONT AWESOME -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+<header>
+<header class="header">
+
+        <!-- LOGO -->
+        <div class="logo">
+            <img src="Logo Mariano Galve.png" alt="Logo Universidad">
+        </div>
+
+        <!-- TITULO -->
+        <div class="titulo">
+            <h1>Conectivos Logicos y Tablas de Verdad</h1>
+            
+        </div>
+
+        <!-- MENU PRINCIPAL -->
+        <nav class="menu-principal">
+
+            <a href="../Inicio/Inicio.html">Inicio</a>
+
+            <a href="../Inicio/Inicio.html">Temas</a>
+
+            <a href="#contacto">Contacto</a>
+
+        </nav>
+
+    </header>
+
+    <nav class="menu-tema">
+
+        <a href="#concepto">Concepto</a>
+
+        <a href="#operadores">Operadores</a>
+
+        <a href="#negacion">Negación</a>
+
+        <a href="#conjuncion">Conjunción</a>
+
+        <a href="#disyuncion">Disyunción</a>
+
+        <a href="#condicional">Condicional</a>
+
+        <a href="#bicondicional">Bicondicional</a>
+
+        <a href="#ejercicios">Ejercicios</a>
+
+        <a href="#resultado">Resultado</a>
+
+    </nav>
+
+    <
+
+         <!-- CONTENIDO PRINCIPAL -->
+           <main>
+
+        <!-- ========================================== -->
+        <!-- CONCEPTO GENERAL -->
+        <!-- ========================================== -->
+
+        <section id="concepto" class="seccion">
+
+            <h2>¿Qué son los Conectivos Lógicos?</h2>
+
+            <p>
+                Los conectivos lógicos son símbolos o palabras que permiten
+                relacionar dos o más proposiciones para formar expresiones
+                lógicas más complejas.
+            </p>
+
+            <p>
+                Son utilizados en matemáticas, informática,
+                programación, bases de datos y razonamiento lógico.
+            </p>
+
+        </section>
+
+        <!-- TABLA RESUMEN -->
+<section id="operadores" class="seccion">
+
+            <h2>Operadores Lógicos</h2>
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>Operador</th>
+
+                        <th>Símbolo</th>
+
+                        <th>Significado</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>Negación</td>
+                        <td>¬</td>
+                        <td>NO</td>
+                    </tr>
+
+                    <tr>
+                        <td>Conjunción</td>
+                        <td>∧</td>
+                        <td>Y</td>
+                    </tr>
+
+                    <tr>
+                        <td>Disyunción</td>
+                        <td>∨</td>
+                        <td>O</td>
+                    </tr>
+
+                    <tr>
+                        <td>Condicional</td>
+                        <td>→</td>
+                        <td>Si... Entonces</td>
+                    </tr>
+
+                    <tr>
+                        <td>Bicondicional</td>
+                        <td>↔</td>
+                        <td>Si y solo si</td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+        <!-- NEGACIÓN -->
+
+        <section id="negacion" class="acordeon">
+
+            <button class="titulo-acordeon">
+
+                Negación (¬)
+
+            </button>
+
+            <div class="contenido-acordeon">
+
+                <h3>Definición</h3>
+
+                <p>
+                    Invierte el valor de verdad de una proposición.
+                </p>
+
+                <h3>Ejemplo Cotidiano</h3>
+
+                <p>
+                    P = "Hoy es lunes"
+                </p>
+
+                <p>
+                    ¬P = "Hoy no es lunes"
+                </p>
+
+                <h3>Tabla de Verdad</h3>
+
+                <!-- TABLA INTERACTIVA -->
+                <table>
+
+                    <tr>
+
+                        <th>P</th>
+
+                        <th>¬P</th>
+
+                    </tr>
+
+                    <tr>
+
+    <td>V</td>
+
+    <td class="celda-interactiva" data-correcta="F"></td>
+
+</tr>
+
+<tr>
+
+    <td>F</td>
+
+    <td class="celda-interactiva" data-correcta="V"></td>
+
+</tr>
+
+                </table>
+
+                <button class="verificar">
+                    Verificar
+                </button>
+
+                <button class="mostrar">
+                    Mostrar Respuestas
+                </button>
+
+                <p class="resultado"></p>
+
+            </div>
+
+        </section>
+
+        <!-- CONJUNCIÓN -->
+
+        <section id="conjuncion" class="acordeon">
+
+            <button class="titulo-acordeon">
+
+                Conjunción (∧)
+
+            </button>
+
+            <div class="contenido-acordeon">
+
+                <h3>Definición</h3>
+
+                <p>
+                    Es verdadera únicamente cuando ambas proposiciones son verdaderas.
+                </p>
+
+                <h3>Ejemplo</h3>
+
+                <p>P = "Tengo tarea"</p>
+
+                <p>Q = "Tengo examen"</p>
+
+                <p>P ∧ Q = "Tengo tarea y tengo examen"</p>
+
+                <!-- TABLA -->
+                  <h3>Tabla de Verdad</h3>
+
+        <table>
+
+            <tr>
+                <th>P</th>
+                <th>Q</th>
+                <th>P ∧ Q</th>
+            </tr>
+
+            <tr>
+    <td>V</td>
+    <td>V</td>
+    <td class="celda-interactiva" data-correcta="V"></td>
+</tr>
+
+<tr>
+    <td>V</td>
+    <td>F</td>
+    <td class="celda-interactiva" data-correcta="F"></td>
+</tr>
+
+<tr>
+    <td>F</td>
+    <td>V</td>
+    <td class="celda-interactiva" data-correcta="F"></td>
+</tr>
+
+<tr>
+    <td>F</td>
+    <td>F</td>
+    <td class="celda-interactiva" data-correcta="F"></td>
+</tr>
+
+        </table>
+
+        <button class="verificar">Verificar</button>
+
+        <button class="mostrar">Mostrar Respuestas</button>
+
+        <p class="resultado"></p>
+                <!-- AQUÍ IRÁ LA TABLA COMPLETA -->
+
+            </div>
+
+        </section>
+
+        <!-- DISYUNCIÓN -->
+
+        <section id="disyuncion" class="acordeon">
+
+            <button class="titulo-acordeon">
+
+                Disyunción (∨)
+
+            </button>
+
+            <div class="contenido-acordeon">
+
+                <h3>Definición</h3>
+
+        <p>
+            La disyunción utiliza el operador "O".
+            Es falsa únicamente cuando ambas proposiciones son falsas.
+        </p>
+
+        <h3>Ejemplo Cotidiano</h3>
+
+        <p>P = "Voy al cine"</p>
+
+        <p>Q = "Voy al parque"</p>
+
+        <p>P ∨ Q = "Voy al cine o voy al parque"</p>
+
+        <h3>Tabla de Verdad</h3>
+
+        <table>
+
+            <tr>
+                <th>P</th>
+                <th>Q</th>
+                <th>P ∨ Q</th>
+            </tr>
+
+            <tr>
+    <td>V</td>
+    <td>V</td>
+    <td class="celda-interactiva" data-correcta="V"></td>
+</tr>
+
+<tr>
+    <td>V</td>
+    <td>F</td>
+    <td class="celda-interactiva" data-correcta="V"></td>
+</tr>
+
+<tr>
+    <td>F</td>
+    <td>V</td>
+    <td class="celda-interactiva" data-correcta="V"></td>
+</tr>
+
+<tr>
+    <td>F</td>
+    <td>F</td>
+    <td class="celda-interactiva" data-correcta="F"></td>
+</tr>
+
+        </table>
+
+        <button class="verificar">Verificar</button>
+
+        <button class="mostrar">Mostrar Respuestas</button>
+
+        <p class="resultado"></p>
+
+
+            </div>
+
+        </section>
+
+        <!-- CONDICIONAL -->
+
+        <section id="condicional" class="acordeon">
+
+            <button class="titulo-acordeon">
+
+                Condicional (→)
+
+            </button>
+
+            <div class="contenido-acordeon">
+
+               <h3>Definición</h3>
+
+        <p>
+            El condicional representa "Si... entonces".
+            Solo es falso cuando la primera proposición es verdadera
+            y la segunda es falsa.
+        </p>
+
+        <h3>Ejemplo Cotidiano</h3>
+
+        <p>P = "Estudio"</p>
+
+        <p>Q = "Apruebo el examen"</p>
+
+        <p>P → Q = "Si estudio, entonces apruebo el examen"</p>
+
+        <h3>Tabla de Verdad</h3>
+
+        <table>
+
+            <tr>
+                <th>P</th>
+                <th>Q</th>
+                <th>P → Q</th>
+            </tr>
+
+            <tr>
+    <td>V</td>
+    <td>V</td>
+    <td class="celda-interactiva" data-correcta="V"></td>
+</tr>
+
+<tr>
+    <td>V</td>
+    <td>F</td>
+    <td class="celda-interactiva" data-correcta="F"></td>
+</tr>
+
+<tr>
+    <td>F</td>
+    <td>V</td>
+    <td class="celda-interactiva" data-correcta="V"></td>
+</tr>
+
+<tr>
+    <td>F</td>
+    <td>F</td>
+    <td class="celda-interactiva" data-correcta="V"></td>
+</tr>
+
+        </table>
+
+        <button class="verificar">Verificar</button>
+
+        <button class="mostrar">Mostrar Respuestas</button>
+
+        <p class="resultado"></p>
+
+            </div>
+
+        </section>
+
+        <!-- BICONDICIONAL -->
+
+        <section id="bicondicional" class="acordeon">
+
+            <button class="titulo-acordeon">
+
+                Bicondicional (↔)
+
+            </button>
+
+            <div class="contenido-acordeon">
+
+                <!-- CONTENIDO -->
+                 <h3>Definición</h3>
+
+        <p>
+            El bicondicional significa "si y solo si".
+            Es verdadero cuando ambas proposiciones tienen el mismo valor.
+        </p>
+
+        <h3>Ejemplo Cotidiano</h3>
+
+        <p>P = "Entro a la universidad"</p>
+
+        <p>Q = "Apruebo el examen de admisión"</p>
+
+        <p>P ↔ Q = "Entro a la universidad si y solo si apruebo el examen"</p>
+
+        <h3>Tabla de Verdad</h3>
+
+        <table>
+
+            <tr>
+                <th>P</th>
+                <th>Q</th>
+                <th>P ↔ Q</th>
+            </tr>
+
+            <tr>
+    <td>V</td>
+    <td>V</td>
+    <td class="celda-interactiva" data-correcta="V"></td>
+</tr>
+
+<tr>
+    <td>V</td>
+    <td>F</td>
+    <td class="celda-interactiva" data-correcta="F"></td>
+</tr>
+
+<tr>
+    <td>F</td>
+    <td>V</td>
+    <td class="celda-interactiva" data-correcta="F"></td>
+</tr>
+
+<tr>
+    <td>F</td>
+    <td>F</td>
+    <td class="celda-interactiva" data-correcta="V"></td>
+</tr>
+
+        </table>
+
+        <button class="verificar">Verificar</button>
+
+        <button class="mostrar">Mostrar Respuestas</button>
+
+        <p class="resultado"></p>
+
+            </div>
+
+        </section>
+
+         <!-- EJERCICIOS AVANZADOS -->
+<section id="ejercicios" class="seccion">
+
+            <h2>Ejercicios Avanzados</h2>
+
+            <!-- EJERCICIO 1 -->
+            <div class="ejercicio">
+
+                <button class="titulo-acordeon">
+
+                    Ejercicio 1
+
+                </button>
+
+                <div class="contenido-acordeon">
+
+                    <h3>(p ∧ q) ∨ ¬q</h3>
+
+                    <!-- TABLA INTERACTIVA -->
+                     <table>
+
+            <tr>
+                <th>P</th>
+                <th>Q</th>
+                <th>P∧Q</th>
+                <th>¬Q</th>
+                <th>Resultado</th>
+            </tr>
+
+            <tr>
+    <td>V</td>
+    <td>V</td>
+
+    <td class="celda-interactiva" data-correcta="V"></td>
+    <td class="celda-interactiva" data-correcta="F"></td>
+    <td class="celda-interactiva" data-correcta="V"></td>
+</tr>
+
+<tr>
+    <td>V</td>
+    <td>F</td>
+
+    <td class="celda-interactiva" data-correcta="F"></td>
+    <td class="celda-interactiva" data-correcta="V"></td>
+    <td class="celda-interactiva" data-correcta="V"></td>
+</tr>
+
+<tr>
+    <td>F</td>
+    <td>V</td>
+
+    <td class="celda-interactiva" data-correcta="F"></td>
+    <td class="celda-interactiva" data-correcta="F"></td>
+    <td class="celda-interactiva" data-correcta="F"></td>
+</tr>
+
+<tr>
+    <td>F</td>
+    <td>F</td>
+
+    <td class="celda-interactiva" data-correcta="F"></td>
+    <td class="celda-interactiva" data-correcta="V"></td>
+    <td class="celda-interactiva" data-correcta="V"></td>
+</tr>
+        </table>
+        
+        <!-- BOTÓN VERIFICAR -->
+        <button class="verificar">
+            Verificar
+        </button>
+
+        <!-- BOTÓN MOSTRAR RESPUESTAS -->
+        <button class="mostrar">
+            Mostrar Respuestas
+        </button>
+
+        <!-- MENSAJE DE RESULTADO -->
+        <p class="resultado"></p>
+
+
+                </div>
+
+            </div>
+
+            <!-- EJERCICIO 2 -->
+            <div class="ejercicio">
+
+                <button class="titulo-acordeon">
+
+                    Ejercicio 2
+
+                </button>
+
+                <div class="contenido-acordeon">
+
+                    <h3>¬(p ∨ q) ∧ (p ∨ q)</h3>
+
+                    <table>
+
+            <tr>
+                <th>P</th>
+                <th>Q</th>
+                <th>P∨Q</th>
+                <th>¬(P∨Q)</th>
+                <th>Resultado</th>
+            </tr>
+
+            <tr>
+<td>V</td>
+<td>V</td>
+
+<td class="celda-interactiva" data-correcta="V"></td>
+<td class="celda-interactiva" data-correcta="F"></td>
+<td class="celda-interactiva" data-correcta="F"></td>
+</tr>
+
+<tr>
+<td>V</td>
+<td>F</td>
+
+<td class="celda-interactiva" data-correcta="V"></td>
+<td class="celda-interactiva" data-correcta="F"></td>
+<td class="celda-interactiva" data-correcta="F"></td>
+</tr>
+
+<tr>
+<td>F</td>
+<td>V</td>
+
+<td class="celda-interactiva" data-correcta="V"></td>
+<td class="celda-interactiva" data-correcta="F"></td>
+<td class="celda-interactiva" data-correcta="F"></td>
+</tr>
+
+<tr>
+<td>F</td>
+<td>F</td>
+
+<td class="celda-interactiva" data-correcta="F"></td>
+<td class="celda-interactiva" data-correcta="V"></td>
+<td class="celda-interactiva" data-correcta="F"></td>
+</tr>
+
+        </table>
+
+        <!-- BOTÓN VERIFICAR -->
+        <button class="verificar">
+            Verificar
+        </button>
+
+        <!-- BOTÓN MOSTRAR RESPUESTAS -->
+        <button class="mostrar">
+            Mostrar Respuestas
+        </button>
+
+        <!-- MENSAJE DE RESULTADO -->
+        <p class="resultado"></p>
+
+
+                </div>
+
+            </div>
+
+<!-- EJERCICIO 3 -->
+            <div class="ejercicio">
+
+    <button class="titulo-acordeon">
+        Ejercicio 3
+    </button>
+
+    <div class="contenido-acordeon">
+
+        <h3>(p ∨ q) → ¬p</h3>
+
+        <table>
+
+            <tr>
+                <th>P</th>
+                <th>Q</th>
+                <th>P∨Q</th>
+                <th>¬P</th>
+                <th>Resultado</th>
+            </tr>
+
+            <tr>
+    <td>V</td>
+    <td>V</td>
+
+    <td class="celda-interactiva" data-correcta="V"></td>
+    <td class="celda-interactiva" data-correcta="F"></td>
+    <td class="celda-interactiva" data-correcta="F"></td>
+</tr>
+
+<tr>
+    <td>V</td>
+    <td>F</td>
+
+    <td class="celda-interactiva" data-correcta="V"></td>
+    <td class="celda-interactiva" data-correcta="F"></td>
+    <td class="celda-interactiva" data-correcta="F"></td>
+</tr>
+
+<tr>
+    <td>F</td>
+    <td>V</td>
+
+    <td class="celda-interactiva" data-correcta="V"></td>
+    <td class="celda-interactiva" data-correcta="V"></td>
+    <td class="celda-interactiva" data-correcta="V"></td>
+</tr>
+
+<tr>
+    <td>F</td>
+    <td>F</td>
+
+    <td class="celda-interactiva" data-correcta="F"></td>
+    <td class="celda-interactiva" data-correcta="V"></td>
+    <td class="celda-interactiva" data-correcta="V"></td>
+</tr>
+
+        </table>
+        <!-- BOTÓN VERIFICAR -->
+        <button class="verificar">
+            Verificar
+        </button>
+
+        <!-- BOTÓN MOSTRAR RESPUESTAS -->
+        <button class="mostrar">
+            Mostrar Respuestas
+        </button>
+
+        <!-- MENSAJE DE RESULTADO -->
+        <p class="resultado"></p>
+
+    </div>
+
+</div>
+
+<!-- EJERCICIO 4 -->
+    <div class="ejercicio">
+
+    <button class="titulo-acordeon">
+        Ejercicio 4
+    </button>
+
+    <div class="contenido-acordeon">
+
+        <h3>(p → r) ∨ ¬(p → q)</h3>
+
+        <table>
+
+            <tr>
+                <th>P</th>
+                <th>Q</th>
+                <th>R</th>
+                <th>P→R</th>
+                <th>P→Q</th>
+                <th>¬(P→Q)</th>
+                <th>Resultado</th>
+            </tr>
+
+            <tr>
+    <td>V</td>
+    <td>V</td>
+    <td>V</td>
+
+    <td class="celda-interactiva" data-correcta="V"></td>
+    <td class="celda-interactiva" data-correcta="V"></td>
+    <td class="celda-interactiva" data-correcta="F"></td>
+    <td class="celda-interactiva" data-correcta="V"></td>
+</tr>
+
+<tr>
+    <td>V</td>
+    <td>F</td>
+    <td>V</td>
+
+    <td class="celda-interactiva" data-correcta="V"></td>
+    <td class="celda-interactiva" data-correcta="F"></td>
+    <td class="celda-interactiva" data-correcta="V"></td>
+    <td class="celda-interactiva" data-correcta="V"></td>
+</tr>
+
+<tr>
+    <td>F</td>
+    <td>V</td>
+    <td>F</td>
+
+    <td class="celda-interactiva" data-correcta="V"></td>
+    <td class="celda-interactiva" data-correcta="V"></td>
+    <td class="celda-interactiva" data-correcta="F"></td>
+    <td class="celda-interactiva" data-correcta="V"></td>
+</tr>
+
+<tr>
+    <td>F</td>
+    <td>F</td>
+    <td>V</td>
+
+    <td class="celda-interactiva" data-correcta="V"></td>
+    <td class="celda-interactiva" data-correcta="V"></td>
+    <td class="celda-interactiva" data-correcta="F"></td>
+    <td class="celda-interactiva" data-correcta="V"></td>
+</tr>
+
+        </table>
+        <!-- BOTÓN VERIFICAR -->
+        <button class="verificar">
+            Verificar
+        </button>
+
+        <!-- BOTÓN MOSTRAR RESPUESTAS -->
+        <button class="mostrar">
+            Mostrar Respuestas
+        </button>
+
+        <!-- MENSAJE DE RESULTADO -->
+        <p class="resultado"></p>
+
+    </div>
+
+</div>
+
+
+<!-- EJERCICIO 5 -->
+        <div class="ejercicio">
+
+    <button class="titulo-acordeon">
+        Ejercicio 5
+    </button>
+
+    <div class="contenido-acordeon">
+
+        <h3>(p ∨ q) ↔ (p ∧ q)</h3>
+
+        <table>
+
+            <tr>
+                <th>P</th>
+                <th>Q</th>
+                <th>P∨Q</th>
+                <th>P∧Q</th>
+                <th>Resultado</th>
+            </tr>
+
+            <tr>
+    <td>V</td>
+    <td>V</td>
+
+    <td class="celda-interactiva" data-correcta="V"></td>
+    <td class="celda-interactiva" data-correcta="V"></td>
+    <td class="celda-interactiva" data-correcta="V"></td>
+</tr>
+
+<tr>
+    <td>V</td>
+    <td>F</td>
+
+    <td class="celda-interactiva" data-correcta="V"></td>
+    <td class="celda-interactiva" data-correcta="F"></td>
+    <td class="celda-interactiva" data-correcta="F"></td>
+</tr>
+
+<tr>
+    <td>F</td>
+    <td>V</td>
+
+    <td class="celda-interactiva" data-correcta="V"></td>
+    <td class="celda-interactiva" data-correcta="F"></td>
+    <td class="celda-interactiva" data-correcta="F"></td>
+</tr>
+
+<tr>
+    <td>F</td>
+    <td>F</td>
+
+    <td class="celda-interactiva" data-correcta="F"></td>
+    <td class="celda-interactiva" data-correcta="F"></td>
+    <td class="celda-interactiva" data-correcta="V"></td>
+</tr>
+
+        </table>
+        <!-- BOTÓN VERIFICAR -->
+        <button class="verificar">
+            Verificar
+        </button>
+
+        <!-- BOTÓN MOSTRAR RESPUESTAS -->
+        <button class="mostrar">
+            Mostrar Respuestas
+        </button>
+
+        <!-- MENSAJE DE RESULTADO -->
+        <p class="resultado"></p>
+
+    </div>
+
+</div>
+
+<!-- EJERCICIO 6 -->
+<div class="ejercicio">
+
+    <button class="titulo-acordeon">
+        Ejercicio 6
+    </button>
+
+    <div class="contenido-acordeon">
+
+        <h3>(p → r) ↔ (p ∨ q)</h3>
+
+        <table>
+
+            <tr>
+                <th>P</th>
+                <th>Q</th>
+                <th>R</th>
+                <th>P→R</th>
+                <th>P∨Q</th>
+                <th>Resultado</th>
+            </tr>
+
+            <tr>
+    <td>V</td>
+    <td>V</td>
+    <td>V</td>
+
+    <td class="celda-interactiva" data-correcta="V"></td>
+    <td class="celda-interactiva" data-correcta="V"></td>
+    <td class="celda-interactiva" data-correcta="V"></td>
+</tr>
+
+<tr>
+    <td>V</td>
+    <td>F</td>
+    <td>F</td>
+
+    <td class="celda-interactiva" data-correcta="F"></td>
+    <td class="celda-interactiva" data-correcta="V"></td>
+    <td class="celda-interactiva" data-correcta="F"></td>
+</tr>
+
+<tr>
+    <td>F</td>
+    <td>V</td>
+    <td>V</td>
+
+    <td class="celda-interactiva" data-correcta="V"></td>
+    <td class="celda-interactiva" data-correcta="V"></td>
+    <td class="celda-interactiva" data-correcta="V"></td>
+</tr>
+
+<tr>
+    <td>F</td>
+    <td>F</td>
+    <td>F</td>
+
+    <td class="celda-interactiva" data-correcta="V"></td>
+    <td class="celda-interactiva" data-correcta="F"></td>
+    <td class="celda-interactiva" data-correcta="F"></td>
+</tr>
+
+        </table>
+        <!-- BOTÓN VERIFICAR -->
+        <button class="verificar">
+            Verificar
+        </button>
+
+        <!-- BOTÓN MOSTRAR RESPUESTAS -->
+        <button class="mostrar">
+            Mostrar Respuestas
+        </button>
+
+        <!-- MENSAJE DE RESULTADO -->
+        <p class="resultado"></p>
+
+    </div>
+
+</div>
+
+
+<!-- EJERCICIO 7 -->
+<div class="ejercicio">
+
+    <button class="titulo-acordeon">
+        Ejercicio 7
+    </button>
+
+    <div class="contenido-acordeon">
+
+        <h3>(p ∧ ¬q) → (¬p ∨ ¬q)</h3>
+
+        <table>
+
+            <tr>
+                <th>P</th>
+                <th>Q</th>
+                <th>¬Q</th>
+                <th>P∧¬Q</th>
+                <th>¬P</th>
+                <th>¬P∨¬Q</th>
+                <th>Resultado</th>
+            </tr>
+
+            <tr>
+    <td>V</td>
+    <td>V</td>
+
+    <td class="celda-interactiva" data-correcta="F"></td>
+    <td class="celda-interactiva" data-correcta="F"></td>
+    <td class="celda-interactiva" data-correcta="F"></td>
+    <td class="celda-interactiva" data-correcta="F"></td>
+    <td class="celda-interactiva" data-correcta="V"></td>
+</tr>
+
+<tr>
+    <td>V</td>
+    <td>F</td>
+
+    <td class="celda-interactiva" data-correcta="V"></td>
+    <td class="celda-interactiva" data-correcta="V"></td>
+    <td class="celda-interactiva" data-correcta="F"></td>
+    <td class="celda-interactiva" data-correcta="V"></td>
+    <td class="celda-interactiva" data-correcta="V"></td>
+</tr>
+
+<tr>
+    <td>F</td>
+    <td>V</td>
+
+    <td class="celda-interactiva" data-correcta="F"></td>
+    <td class="celda-interactiva" data-correcta="F"></td>
+    <td class="celda-interactiva" data-correcta="V"></td>
+    <td class="celda-interactiva" data-correcta="V"></td>
+    <td class="celda-interactiva" data-correcta="V"></td>
+</tr>
+
+<tr>
+    <td>F</td>
+    <td>F</td>
+
+    <td class="celda-interactiva" data-correcta="V"></td>
+    <td class="celda-interactiva" data-correcta="F"></td>
+    <td class="celda-interactiva" data-correcta="V"></td>
+    <td class="celda-interactiva" data-correcta="V"></td>
+    <td class="celda-interactiva" data-correcta="V"></td>
+</tr>
+
+        </table>
+
+        <!-- BOTÓN VERIFICAR -->
+        <button class="verificar">
+            Verificar
+        </button>
+
+        <!-- BOTÓN MOSTRAR RESPUESTAS -->
+        <button class="mostrar">
+            Mostrar Respuestas
+        </button>
+
+        <!-- MENSAJE DE RESULTADO -->
+        <p class="resultado"></p>
+
+    </div>
+
+</div>
+
+            
+
+       
+
+    </main>
+
+    <!-- PIE DE PAGINA -->
+      <footer id="contacto">
+
+        <!-- CONTENEDOR FOOTER -->
+        <div class="footer-contenido">
+
+            <!-- LOGO -->
+            <div class="footer-logo">
+
+                <img src="Logo Mariano Galve.png" alt="Logo">
+
+            </div>
+
+            <!-- INFORMACION GENERAL -->
+            <div class="footer-info">
+
+                <h2>Contactos</h2>
+
+                <p>Correo: logica@sistemas.com</p>
+
+                <p>Teléfono: +502 0000-0000</p>
+
+
+            </div>
+
+        </div>
+
+        <!-- PARTICIPANTES -->
+
+        <div class="integrantes">
+
+            <!-- PARTICIPANTE 1 -->
+            <div class="persona">
+
+                <h3>Nahum Gamaliel Chun Ramirez</h3>
+
+                <p>Carnet: 0903-26-9546</p>
+
+                <!-- ICONOS -->
+                <div class="redes">
+
+                    <!-- GMAIL -->
+                    <a href="mailto:Nahumfkiller.555@gmail.com">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+
+                    <!-- WHATSAPP -->
+                    <a href="https://wa.me/50230736551" target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+
+                    
+
+                    
+
+                </div>
+
+            </div>
+
+            <!-- PARTICIPANTE 2 -->
+            <div class="persona">
+
+                <h3>Milhen Josué Fuentes Velásquez</h3>
+
+                <p>Carnet: 0903-26-996</p>
+
+                <div class="redes">
+
+                    <a href="mailto:fuentesjosue064@gmail.com ">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+
+                    <a href="https://wa.me/50246036109 " target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+
+                    <a href="https://www.instagram.com/velasquez496_/" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    
+
+                </div>
+
+            </div>
+
+            <!-- PARTICIPANTE 3 -->
+            <div class="persona">
+
+                <h3>Diana Fernanda Barrios Ramírez </h3>
+
+                <p>Carnet: 0903-26-7778 </p>
+
+                <div class="redes">
+
+                    <a href="mailto:barriosramirezdianafernanda@gmail.com">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+
+                    <a href="https://wa.me/50259353308 " target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+
+                    <a href="https://www.instagram.com/fr.ch__/" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    
+
+                </div>
+
+            </div>
+
+            <!-- PARTICIPANTE 4 -->
+            <div class="persona">
+
+                <h3>Francisco Javier González Velásquez</h3>
+
+                <p>Carnet: 0903-26-3434</p>
+
+                <div class="redes">
+
+                    <a href="mailto:Javiervelazques67@gmail.com">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+
+                    <a href="https://wa.me/50232764031" target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+
+                    
+
+                </div>
+
+            </div>
+
+            <!-- PARTICIPANTE 5 -->
+            <div class="persona">
+
+                <h3>Janeth Darlyne Orozco de León 5</h3>
+
+                <p>Carnet: 0903-26-5297</p>
+
+                <div class="redes">
+
+                    <a href="mailto:Janeth@gmail.com">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+
+                    <a href="https://wa.me/50239114599" target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+
+                    <a href="https://www.instagram.com/janeth.d_o?igsh=bnVnajVhMHkydTQ5" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- PARTICIPANTE 6 -->
+            <div class="persona">
+
+                <h3>Pedro Andres Navarro Merida</h3>
+
+                <p>Carnet: 0903-26-12272</p>
+
+                <div class="redes">
+
+                    <a href="mailto:andres2007navarro@gmail.com">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+
+                    <a href="https://wa.me/50240447726" target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+
+                    <a href="https://www.instagram.com/andres_2906__/" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script src="Tema3.js"></script>
+
+    
+</body>
+</html>

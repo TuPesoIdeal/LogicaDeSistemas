@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conjuntos Lógicos</title>
+<!-- CONEXION CON CSS -->
+    <link rel="stylesheet" href="Tema4.css">
+   <!-- ICONOS DE FONT AWESOME -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+<body>
+
+    <div class="circulo-decorativo c1"></div>
+<div class="circulo-decorativo c2"></div>
+<div class="circulo-decorativo c3"></div>
+
+<header>
+
+<!-- LOGO -->
+         <div class="logo">
+            <img src="Logo Mariano Galve.png" alt="Logo Universidad">
+         </div>
+<div class="titulo">
+    <h1>Conjuntos Lógicos</h1>
+    <p>Lógica de Sistemas</p>
+</div>
+    <!-- MENU -->
+        <nav class="menu">
+
+            <a href="../Inicio/Inicio.html">Inicio</a>
+
+            <!-- AL DAR CLIC BAJA A LOS TEMAS -->
+            <a href="../Inicio/Inicio.html#temas">Temas</a>
+
+            <!-- AL DAR CLIC BAJA AL CONTACTO -->
+            <a href="#contacto">Contacto</a>
+
+        </nav>
+</header>
+
+<nav> 
+    <a href="#concepto">Concepto</a>
+    <a href="#extención">Por extensión</a>
+    <a href="#comprensión">Por comprensión</a>
+    <a href="#tipo">Tipos</a>
+    <a href="#operacion">Operaciones</a>
+</nav>
+
+<main>
+    <section id="concepto"> 
+        <div class="card"> 
+            <h2>¿Qué es un conjunto?</h2>
+            <p>Un conjunto es una colección de elementos que tienen una característica común y se consideran como una unidad. Cada elemento del conjunto se llama miembro o elemento, dichos objetos pueden ser cualquier cosa: números, personas, letras, etc.</p>
+            <div class="formula"> A = {1, 2, 3, 4, 5} </div>
+            <p>Los conjuntos siempre se nombran con letras mayúsculas (A, B, C...). Aquí, el conjunto A contiene los números del 1 al 5.</p> 
+            <div class="img-container"> <img src="https://www.smartick.es/blog/wp-content/uploads/conjuntos-y-subconjuntos-1.png" alt="Concepto de Conjuntos" width="400"> </div>
+            <p>Por lo mismo existen 2 formas de determinarlos:</p>
+        </div>
+    </section>
+
+    <section id="extención"> 
+        <div class="card"> 
+            <h2>Extensión o numeración</h2>
+            <p>Se refiere a la @enumeración explícita de cada uno de los componentes del conjunto, separados por comas y rodeados de llaves. Se utiliza cuando el conjunto es pequeño, cerrado o cuando la manera más efectiva de identificarlos es enumerando los elementos.</p>
+            <div class="formula"> B = {rojo, amarillo, azul} <br> C = {a, e, i, o, u} </div>
+            <button onclick="mostrarextención()">¿Por qué son numerados?</button>
+            <p id="expextención" class="resultado"></p>
+            <div class="img-container"> <img src="https://i.ytimg.com/vi/snf59UQOG-k/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCWiXGzS4OU-0ibSQIIEzyhsyzopA" alt="Ejemplo Extensión" width="400"> </div>
+        </div>
+    </section>
+
+    <section id="comprensión"> 
+        <div class="card"> 
+            <h2>Por comprensión o propiedad</h2>
+            <p>Se trata de establecer una regla o propiedad común que todos los elementos deben seguir para formar parte del conjunto. Se describe su "patrón" en vez de enlistar los elementos. Aplica una estructura formal que, en sistemas, se traduce en un filtro o condición: A = {x | propiedad de x}</p>
+            <div class="formula"> B = {x | x es número par menor que 10} = {2, 4, 6, 8}</div>
+            <button onclick="mostrarcomprension()">¿Por qué tienen patrón?</button>
+            <p id="expcomprension" class="resultado"></p>
+            <div class="img-container"> <img src="https://i.ytimg.com/vi/5We0pcZpTls/maxresdefault.jpg" alt="Ejemplo Comprensión" width="400"></div>
+        </div>
+    </section>
+
+    <section id="tipo"> 
+        <div class="card"> 
+            <h2>¿Cuáles son los tipos de conjuntos?</h2>
+            <div class="img-container"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqWeA03o_75wT_G7QZRQ26Z3HF2xhR-cA5TA&s" alt="Tipos de Conjuntos" width="400"> </div>
+        </div>
+    </section>
+
+    <section id="operacion"> 
+        <div class="card">
+            <h2>Las operaciones con conjuntos</h2>
+            <p>Son operaciones matemáticas que se realizan sobre conjuntos, que son colecciones de objetos o elementos distintos. Hay tres tipos principales de operaciones en conjuntos: Unión (∪), Intersección (∩) y Diferencia (-).</p> 
+            <div class="img-container"> <img src="https://mangosound.wordpress.com/wp-content/uploads/2017/01/definiciones1.png?w=620" alt="Resumen de Operaciones" width="400"> </div>
+            <button onclick="mostraroperacion()">¿Cómo se interpretan?</button>
+            <p id="expoperacion" class="resultado"></p>
+        </div>
+    </section>
+
+    <section>
+        <div class="card">
+            <h2>Unión "∪"</h2>
+            <p>La unión de dos conjuntos resulta en un conjunto nuevo que incluye todos los elementos que son parte del conjunto A, del conjunto B o de ambos. En términos físicos, se trata de una fusión total de las colecciones, suprimiendo las duplicaciones (pues los elementos son únicos en la teoría de conjuntos).</p>
+            <div class="formula">A = {Juan, Carlos, Pablo} <br> B = {Luis, María, Sebastián}<br> A ∪ B = {Juan, Carlos, Pablo, Luis, María, Sebastián} </div>
+            <button onclick="mostrarU()">Explicación</button>
+            <p id="expU" class="resultado"></p>
+            <div class="img-container"> <img src="https://www.conoce3000.com/html/espaniol/Libros/Matematica01/imagenes/UnionConjuntos02m.svg" alt="Unión de Conjuntos" width="400"> </div> 
+        </div>
+    </section>
+
+    <section>
+        <div class="card">
+            <h2>Intersección "∩"</h2>
+            <p>La intersección es un nuevo conjunto que consiste exclusivamente de los elementos que se encuentran simultáneamente en ambos conjuntos. Si falta un elemento en cualquiera de los dos, queda totalmente excluido del resultado.</p>
+            <div class="formula">A = {1, 2, 3, 4, 5} <br>B = {4, 5, 6, 7, 8} <br> A ∩ B = {4, 5} </div>
+            <button onclick="mostrarI()">Explicación</button>
+            <p id="expI" class="resultado"></p>
+            <div class="img-container"> <img src="https://www.conoce3000.com/html/espaniol/Libros/Matematica01/imagenes/Interseccion01m.svg" alt="Intersección de Conjuntos" width="400"> </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="card">
+            <h2>Diferencia (-)</h2>
+            <p>El resultado de la diferencia entre el conjunto A y el conjunto B es un nuevo conjunto que contiene los elementos de A, pero no los de B. Es como "quitarle" a A todo lo que tenga relación con B.</p>
+            <div class="formula">A = {1, 2, 3} <br> B = {3, 4, 5} <br> A − B = {1, 2}</div>
+            <button onclick="mostrarD()">Explicación</button>
+            <p id="expD" class="resultado"></p>
+            <div class="img-container"> <img src="https://www.conoce3000.com/html/espaniol/Libros/Matematica01/imagenes/Diferencia01m.svg" alt="Diferencia de Conjuntos" width="400"> </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="card">
+            <h2>Complemento "Ac"</h2>
+            <p>El complemento es una operación que, por obligación, debe observarse en el universo (U). El complemento de A incluye todo aquello que pertenece al universo, pero no a A. Es el conjunto contrario por completo.</p>
+            <div class="formula">Si en el colegio hay 500 estudiantes en total (U), y solamente 4 de ellos están inscritos en Robótica (A), A' será el grupo de los otros 496 alumnos que no son miembros de ese club.</div>
+            <button onclick="mostrarC()">Explicación</button>
+            <p id="expC" class="resultado"></p>
+            <div class="img-container"> <img src="https://i.ytimg.com/vi/2JzZr7YUbdY/sddefault.jpg" alt="Complemento de un Conjunto" width="400"> </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="card">
+            <h2>Diferencia simétrica A △ B</h2>
+            <p>Esta operación es muy interesante desde la perspectiva de los sistemas lógicos. El resultado es un nuevo conjunto compuesto por todos los elementos que se encuentran en A o en B, pero no en ambos a la vez. No incluye la zona común.</p>
+            <div class="formula">A = {1, 2, 3, 4, 5}<br> B = {4, 5, 6, 7, 8, 9} <br> A △ B = {1, 2, 3, 6, 7, 8, 9} </div>
+            <button onclick="mostrarDS()">Explicación</button>
+            <p id="expDS" class="resultado"></p>
+            <div class="img-container"> <img src="https://www.conoce3000.com/html/espaniol/Libros/Matematica01/imagenes/DiferenciaSimetrica01m.svg" width="400"> </div>
+        </div>
+    </section>
+</main>
+
+<!-- PIE DE PAGINA -->
+      <footer id="contacto">
+
+        <!-- CONTENEDOR FOOTER -->
+        <div class="footer-contenido">
+
+            <!-- LOGO -->
+            <div class="footer-logo">
+
+                <img src="Logo Mariano Galve.png" alt="Logo">
+
+            </div>
+
+            <!-- INFORMACION GENERAL -->
+            <div class="footer-info">
+
+                <h2>Contactos</h2>
+
+                <p>Correo: logica@sistemas.com</p>
+
+                <p>Teléfono: +502 0000-0000</p>
+
+
+            </div>
+
+        </div>
+
+        <!-- PARTICIPANTES -->
+
+        <div class="integrantes">
+
+            <!-- PARTICIPANTE 1 -->
+            <div class="persona">
+
+                <h3>Nahum Gamaliel Chun Ramirez</h3>
+
+                <p>Carnet: 0903-26-9546</p>
+
+                <!-- ICONOS -->
+                <div class="redes">
+
+                    <!-- GMAIL -->
+                    <a href="mailto:Nahumfkiller.555@gmail.com">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+
+                    <!-- WHATSAPP -->
+                    <a href="https://wa.me/50230736551" target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+
+                    
+
+                    
+
+                </div>
+
+            </div>
+
+            <!-- PARTICIPANTE 2 -->
+            <div class="persona">
+
+                <h3>Milhen Josué Fuentes Velásquez</h3>
+
+                <p>Carnet: 0903-26-996</p>
+
+                <div class="redes">
+
+                    <a href="mailto:fuentesjosue064@gmail.com ">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+
+                    <a href="https://wa.me/50246036109 " target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+
+                    <a href="https://www.instagram.com/velasquez496_/" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    
+
+                </div>
+
+            </div>
+
+            <!-- PARTICIPANTE 3 -->
+            <div class="persona">
+
+                <h3>Diana Fernanda Barrios Ramírez </h3>
+
+                <p>Carnet: 0903-26-7778 </p>
+
+                <div class="redes">
+
+                    <a href="mailto:barriosramirezdianafernanda@gmail.com">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+
+                    <a href="https://wa.me/50259353308 " target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+
+                    <a href="https://www.instagram.com/fr.ch__/" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    
+
+                </div>
+
+            </div>
+
+            <!-- PARTICIPANTE 4 -->
+            <div class="persona">
+
+                <h3>Francisco Javier González Velásquez</h3>
+
+                <p>Carnet: 0903-26-3434</p>
+
+                <div class="redes">
+
+                    <a href="mailto:Javiervelazques67@gmail.com">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+
+                    <a href="https://wa.me/50232764031" target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+
+                    
+
+                </div>
+
+            </div>
+
+            <!-- PARTICIPANTE 5 -->
+            <div class="persona">
+
+                <h3>Janeth Darlyne Orozco de León 5</h3>
+
+                <p>Carnet: 0903-26-5297</p>
+
+                <div class="redes">
+
+                    <a href="mailto:Janeth@gmail.com">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+
+                    <a href="https://wa.me/50239114599" target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+
+                    <a href="https://www.instagram.com/janeth.d_o?igsh=bnVnajVhMHkydTQ5" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- PARTICIPANTE 6 -->
+            <div class="persona">
+
+                <h3>Pedro Andres Navarro Merida</h3>
+
+                <p>Carnet: 0903-26-12272</p>
+
+                <div class="redes">
+
+                    <a href="mailto:andres2007navarro@gmail.com">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+
+                    <a href="https://wa.me/50240447726" target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+
+                    <a href="https://www.instagram.com/andres_2906__/" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script src="Tema4.js"></script>
+    
+</body>
+</html>

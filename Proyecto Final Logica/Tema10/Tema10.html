@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Análisis de Porcentaje</title>
+    <!-- CONEXION CON CSS -->
+    <link rel="stylesheet" href="Tema.css">
+   <!-- ICONOS DE FONT AWESOME -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <header>
+
+        <!-- LOGO -->
+         <div class="logo">
+            <img src="Logo Mariano Galve.png" alt="Logo Universidad">
+         </div>
+<Div class="titulo">
+    <h1>Análisis de Porcentaje</h1>
+    <p>Logica de Sistemas</p>
+</Div>
+
+    <!-- MENU -->
+        <nav class="menu">
+
+            <a href="../Inicio/Inicio.html">Inicio</a>
+
+            <!-- AL DAR CLIC BAJA A LOS TEMAS -->
+            <a href="../Inicio/Inicio.html#temas">Temas</a>
+
+            <!-- AL DAR CLIC BAJA AL CONTACTO -->
+            <a href="#contacto">Contacto</a>
+
+        </nav>
+</header>
+
+<nav>
+    <a href="#concepto">Concepto</a>
+    <a href="#formula">Fórmula</a>
+    <a href="#usos">Usos</a>
+    <a href="#calculadora">Calculadora</a>
+</nav>
+
+<section id="concepto">
+    <div class="card">
+        <h2>¿Qué es el porcentaje?</h2>
+        <p>
+            El porcentaje es una forma de representar una cantidad como una parte de 100.
+            Se utiliza para comparar valores, analizar aumentos, descuentos, estadísticas,
+            ganancias, pérdidas y resultados.
+        </p>
+
+        <div class="formula">
+            Porcentaje significa: “por cada 100”
+        </div>
+
+        <p>
+            Por ejemplo, si decimos 25%, significa 25 de cada 100 partes.
+        </p>
+    </div>
+</section>
+
+<section id="formula">
+    <div class="card">
+        <h2>Fórmula Principal</h2>
+        <p>
+            Para encontrar el porcentaje de una cantidad se utiliza la siguiente fórmula:
+        </p>
+
+        <div class="formula">
+            Resultado = Cantidad × Porcentaje / 100
+        </div>
+
+        <p>
+            Ejemplo: el 20% de 500 es:
+        </p>
+
+        <div class="formula">
+            500 × 20 / 100 = 100
+        </div>
+    </div>
+</section>
+
+<section id="usos">
+    <div class="card">
+        <h2>Usos del Porcentaje</h2>
+
+        <div class="grid">
+            <div class="mini-card">
+                <h3>Descuentos</h3>
+                <p>Se usa para calcular rebajas en productos o servicios.</p>
+            </div>
+
+            <div class="mini-card">
+                <h3>Estadísticas</h3>
+                <p>Ayuda a interpretar resultados de encuestas o datos.</p>
+            </div>
+
+            <div class="mini-card">
+                <h3>Finanzas</h3>
+                <p>Permite analizar intereses, ganancias y pérdidas.</p>
+            </div>
+
+            <div class="mini-card">
+                <h3>Educación</h3>
+                <p>Se utiliza para calcular notas, avances y resultados.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="calculadora">
+    <div class="card">
+        <h2>Calculadora de Porcentaje</h2>
+        <p>Ingresa una cantidad y el porcentaje que deseas calcular.</p>
+
+        <div class="formula">
+            Cantidad × Porcentaje / 100
+        </div>
+
+        <input type="number" id="cantidad" placeholder="Cantidad">
+        <input type="number" id="porcentaje" placeholder="Porcentaje %">
+
+        <br>
+
+        <button onclick="calcularPorcentaje()">Calcular</button>
+        <button onclick="limpiar()">Limpiar</button>
+
+        <p id="resultado" class="resultado"></p>
+    </div>
+</section>
+
+<section>
+    <div class="card">
+        <h2>Ejemplo Interactivo</h2>
+        <p>
+            Supongamos que un producto cuesta Q300 y tiene un descuento del 15%.
+        </p>
+
+        <button onclick="mostrarEjemplo()">Ver solución</button>
+
+        <p id="ejemplo" class="resultado"></p>
+    </div>
+</section>
+
+<!-- PIE DE PAGINA -->
+      <footer id="contacto">
+
+        <!-- CONTENEDOR FOOTER -->
+        <div class="footer-contenido">
+
+            <!-- LOGO -->
+            <div class="footer-logo">
+
+                <img src="Logo Mariano Galve.png" alt="Logo">
+
+            </div>
+
+            <!-- INFORMACION GENERAL -->
+            <div class="footer-info">
+
+                <h2>Contactos</h2>
+
+                <p>Correo: logica@sistemas.com</p>
+
+                <p>Teléfono: +502 0000-0000</p>
+
+
+            </div>
+
+        </div>
+
+        <!-- PARTICIPANTES -->
+
+        <div class="integrantes">
+
+            <!-- PARTICIPANTE 1 -->
+            <div class="persona">
+
+                <h3>Nahum Gamaliel Chun Ramirez</h3>
+
+                <p>Carnet: 0903-26-9546</p>
+
+                <!-- ICONOS -->
+                <div class="redes">
+
+                    <!-- GMAIL -->
+                    <a href="mailto:Nahumfkiller.555@gmail.com">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+
+                    <!-- WHATSAPP -->
+                    <a href="https://wa.me/50230736551" target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+
+                    
+
+                    
+
+                </div>
+
+            </div>
+
+            <!-- PARTICIPANTE 2 -->
+            <div class="persona">
+
+                <h3>Milhen Josué Fuentes Velásquez</h3>
+
+                <p>Carnet: 0903-26-996</p>
+
+                <div class="redes">
+
+                    <a href="mailto:fuentesjosue064@gmail.com ">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+
+                    <a href="https://wa.me/50246036109 " target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+
+                    <a href="https://www.instagram.com/velasquez496_/" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    
+
+                </div>
+
+            </div>
+
+            <!-- PARTICIPANTE 3 -->
+            <div class="persona">
+
+                <h3>Diana Fernanda Barrios Ramírez </h3>
+
+                <p>Carnet: 0903-26-7778 </p>
+
+                <div class="redes">
+
+                    <a href="mailto:barriosramirezdianafernanda@gmail.com">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+
+                    <a href="https://wa.me/50259353308 " target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+
+                    <a href="https://www.instagram.com/fr.ch__/" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    
+
+                </div>
+
+            </div>
+
+            <!-- PARTICIPANTE 4 -->
+            <div class="persona">
+
+                <h3>Francisco Javier González Velásquez</h3>
+
+                <p>Carnet: 0903-26-3434</p>
+
+                <div class="redes">
+
+                    <a href="mailto:Javiervelazques67@gmail.com">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+
+                    <a href="https://wa.me/50232764031" target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+
+                    
+
+                </div>
+
+            </div>
+
+            <!-- PARTICIPANTE 5 -->
+            <div class="persona">
+
+                <h3>Janeth Darlyne Orozco de León 5</h3>
+
+                <p>Carnet: 0903-26-5297</p>
+
+                <div class="redes">
+
+                    <a href="mailto:Janeth@gmail.com">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+
+                    <a href="https://wa.me/50239114599" target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+
+                    <a href="https://www.instagram.com/janeth.d_o?igsh=bnVnajVhMHkydTQ5" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- PARTICIPANTE 6 -->
+            <div class="persona">
+
+                <h3>Pedro Andres Navarro Merida</h3>
+
+                <p>Carnet: 0903-26-12272</p>
+
+                <div class="redes">
+
+                    <a href="mailto:andres2007navarro@gmail.com">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+
+                    <a href="https://wa.me/50240447726" target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+
+                    <a href="https://www.instagram.com/andres_2906__/" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+<!-- CONEXION CON JAVASCRIPT -->
+    <script src="Tema10.js"></script>
+    
+</body>
+</html>

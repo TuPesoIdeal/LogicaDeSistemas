@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipos de Razonamiento</title>
+    <link rel="stylesheet" href="Tema1.css">
+    <!-- ICONOS DE FONT AWESOME -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+
+</head>
+<body>
+    
+<header>
+<!-- LOGO -->
+         <div class="logo">
+            <img src="Logo Mariano Galve.png" alt="Logo Universidad">
+         </div>
+<div class="titulo">
+    <h1>Tipos de Razonamiento</h1>
+    <p>Lógica de sistemas</p>
+    </div>
+
+    <!-- MENU -->
+        <nav class="menu">
+
+            <a href="../Inicio/Inicio.html">Inicio</a>
+
+            <!-- AL DAR CLIC BAJA A LOS TEMAS -->
+            <a href="../Inicio/Inicio.html#temas">Temas</a>
+
+            <!-- AL DAR CLIC BAJA AL CONTACTO -->
+            <a href="#contacto">Contacto</a>
+
+        </nav>
+</header>
+
+<nav>
+    <a href="#concepto">Concepto</a>
+    <a href="#tipos">Tipos</a>
+    <a href="#ejemplos">Ejemplos</a>
+    <a href="#actividad">Actividad</a>
+</nav>
+
+<section id="concepto">
+    <div class="card">
+        <h2>¿Qué es el razonamiento?</h2>
+        <p>
+            El razonamiento es la capacidad de analizar información, relacionar ideas
+            y llegar a una conclusión lógica. En lógica de sistemas, permite resolver
+            problemas, tomar decisiones y construir soluciones ordenadas.
+        </p>
+
+        <div class="formula">
+            Información + Análisis = Conclusión
+        </div>
+    </div>
+</section>
+
+<section id="tipos">
+    <div class="card">
+        <h2>Tipos principales de razonamiento</h2>
+
+        <div class="grid">
+            <div class="mini-card">
+                <h3>Razonamiento Deductivo</h3>
+                <p>
+                    Parte de una idea general para llegar a una conclusión específica.
+                </p>
+                <button onclick="mostrarDeductivo()">Ver ejemplo</button>
+                <p id="deductivo" class="resultado"></p>
+            </div>
+
+            <div class="mini-card">
+                <h3>Razonamiento Inductivo</h3>
+                <p>
+                    Parte de casos particulares para formar una conclusión general.
+                </p>
+                <button onclick="mostrarInductivo()">Ver ejemplo</button>
+                <p id="inductivo" class="resultado"></p>
+            </div>
+
+            <div class="mini-card">
+                <h3>Razonamiento Analógico</h3>
+                <p>
+                    Compara situaciones parecidas para encontrar una solución.
+                </p>
+                <button onclick="mostrarAnalogico()">Ver ejemplo</button>
+                <p id="analogico" class="resultado"></p>
+            </div>
+
+            <div class="mini-card">
+                <h3>Razonamiento Abductivo</h3>
+                <p>
+                    Busca la explicación más probable ante una situación.
+                </p>
+                <button onclick="mostrarAbductivo()">Ver ejemplo</button>
+                <p id="abductivo" class="resultado"></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="ejemplos">
+    <div class="card">
+        <h2>Comparación rápida</h2>
+
+        <div class="formula">
+            Deductivo: General → Particular
+        </div>
+
+        <div class="formula">
+            Inductivo: Particular → General
+        </div>
+
+        <div class="formula">
+            Analógico: Comparación → Solución
+        </div>
+
+        <div class="formula">
+            Abductivo: Observación → Explicación probable
+        </div>
+    </div>
+</section>
+
+<section id="actividad">
+    <div class="card">
+        <h2>Actividad Interactiva</h2>
+        <p>
+            Lee el siguiente caso:
+        </p>
+
+        <div class="formula">
+            “Todos los sistemas necesitan datos de entrada.  
+            Este programa recibe datos de entrada.  
+            Por lo tanto, este programa funciona como un sistema.”
+        </div>
+
+        <p>¿Qué tipo de razonamiento se está usando?</p>
+
+        <button onclick="respuestaCorrecta()">Ver respuesta</button>
+
+        <p id="respuesta" class="resultado"></p>
+    </div>
+</section>
+
+<!-- PIE DE PAGINA -->
+      <footer id="contacto">
+
+        <!-- CONTENEDOR FOOTER -->
+        <div class="footer-contenido">
+
+            <!-- LOGO -->
+            <div class="footer-logo">
+
+                <img src="Logo Mariano Galve.png" alt="Logo">
+
+            </div>
+
+            <!-- INFORMACION GENERAL -->
+            <div class="footer-info">
+
+                <h2>Contactos</h2>
+
+                <p>Correo: logica@sistemas.com</p>
+
+                <p>Teléfono: +502 0000-0000</p>
+
+
+            </div>
+
+        </div>
+
+        <!-- PARTICIPANTES -->
+
+        <div class="integrantes">
+
+            <!-- PARTICIPANTE 1 -->
+            <div class="persona">
+
+                <h3>Nahum Gamaliel Chun Ramirez</h3>
+
+                <p>Carnet: 0903-26-9546</p>
+
+                <!-- ICONOS -->
+                <div class="redes">
+
+                    <!-- GMAIL -->
+                    <a href="mailto:Nahumfkiller.555@gmail.com">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+
+                    <!-- WHATSAPP -->
+                    <a href="https://wa.me/50230736551" target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+
+                    
+
+                    
+
+                </div>
+
+            </div>
+
+            <!-- PARTICIPANTE 2 -->
+            <div class="persona">
+
+                <h3>Milhen Josué Fuentes Velásquez</h3>
+
+                <p>Carnet: 0903-26-996</p>
+
+                <div class="redes">
+
+                    <a href="mailto:fuentesjosue064@gmail.com ">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+
+                    <a href="https://wa.me/50246036109 " target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+
+                    <a href="https://www.instagram.com/velasquez496_/" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    
+
+                </div>
+
+            </div>
+
+            <!-- PARTICIPANTE 3 -->
+            <div class="persona">
+
+                <h3>Diana Fernanda Barrios Ramírez </h3>
+
+                <p>Carnet: 0903-26-7778 </p>
+
+                <div class="redes">
+
+                    <a href="mailto:barriosramirezdianafernanda@gmail.com">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+
+                    <a href="https://wa.me/50259353308 " target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+
+                    <a href="https://www.instagram.com/fr.ch__/" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    
+
+                </div>
+
+            </div>
+
+            <!-- PARTICIPANTE 4 -->
+            <div class="persona">
+
+                <h3>Francisco Javier González Velásquez</h3>
+
+                <p>Carnet: 0903-26-3434</p>
+
+                <div class="redes">
+
+                    <a href="mailto:Javiervelazques67@gmail.com">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+
+                    <a href="https://wa.me/50232764031" target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+
+                    
+
+                </div>
+
+            </div>
+
+            <!-- PARTICIPANTE 5 -->
+            <div class="persona">
+
+                <h3>Janeth Darlyne Orozco de León 5</h3>
+
+                <p>Carnet: 0903-26-5297</p>
+
+                <div class="redes">
+
+                    <a href="mailto:Janeth@gmail.com">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+
+                    <a href="https://wa.me/50239114599" target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+
+                    <a href="https://www.instagram.com/janeth.d_o?igsh=bnVnajVhMHkydTQ5" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- PARTICIPANTE 6 -->
+            <div class="persona">
+
+                <h3>Pedro Andres Navarro Merida</h3>
+
+                <p>Carnet: 0903-26-12272</p>
+
+                <div class="redes">
+
+                    <a href="mailto:andres2007navarro@gmail.com">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+
+                    <a href="https://wa.me/50240447726" target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+
+                    <a href="https://www.instagram.com/andres_2906__/" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    
+
+                </div>
+
+            </div>
+
+        </div>
+</footer>
+
+<script src="Tema1.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conjuntos y Operaciones con Conjuntos</title>
+
+    <!-- CONEXION CON CSS -->
+    <link rel="stylesheet" href="Tema6.css">
+   <!-- ICONOS DE FONT AWESOME -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    
+<!-- ================================================= -->
+<!-- HEADER -->
+<!-- ================================================= -->
+
+<header>
+<!-- LOGO -->
+         <div class="logo">
+            <img src="Logo Mariano Galve.png" alt="Logo Universidad">
+         </div>
+
+<div class="titulo">
+<h1>📚 Conjuntos y Operaciones con Conjuntos</h1>
+<p>Logica de Sistemas</p>
+</div>
+
+<!-- MENU -->
+        <nav class="menu">
+
+            <a href="../Inicio/Inicio.html">Inicio</a>
+
+            <!-- AL DAR CLIC BAJA A LOS TEMAS -->
+            <a href="../Inicio/Inicio.html#temas">Temas</a>
+
+            <!-- AL DAR CLIC BAJA AL CONTACTO -->
+            <a href="#contacto">Contacto</a>
+
+        </nav>
+
+
+</header>
+
+<nav >
+
+<button class="boton" onclick="mostrar('conjuntos')">
+📘 Conjuntos
+</button>
+
+<button class="boton" onclick="mostrar('operaciones')">
+🧮 Operaciones
+</button>
+
+<button class="boton" onclick="mostrar('ejercicios')">
+🎮 Problemas
+</button>
+
+</nav>
+
+
+
+<!-- ================================================= -->
+<!-- PAGINA CONJUNTOS -->
+<!-- ================================================= -->
+
+<section id="conjuntos" class="active">
+
+<div class="container">
+
+<div class="card">
+
+<h2>¿Qué es un conjunto?</h2>
+
+<p>
+
+Un conjunto es una colección de elementos
+que comparten una característica.
+
+</p>
+
+<div class="formula">
+
+A = {1,2,3,4}
+
+</div>
+
+<p>
+
+Los conjuntos se representan con letras
+mayúsculas y sus elementos van entre llaves.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>Tipos de conjuntos</h2>
+
+<div class="tipos">
+
+<button class="tipo"
+data-bs-toggle="modal"
+data-bs-target="#modalVacio">
+
+⭕ Vacío
+
+</button>
+
+<button class="tipo"
+data-bs-toggle="modal"
+data-bs-target="#modalUnitario">
+
+🔵 Unitario
+
+</button>
+
+<button class="tipo"
+data-bs-toggle="modal"
+data-bs-target="#modalFinito">
+
+🔢 Finito
+
+</button>
+
+<button class="tipo"
+data-bs-toggle="modal"
+data-bs-target="#modalInfinito">
+
+♾️ Infinito
+
+</button>
+
+</div>
+
+</section>
+
+<!-- ================================================= -->
+<!-- PAGINA OPERACIONES -->
+<!-- ================================================= -->
+
+<section id="operaciones">
+
+<div class="container">
+
+<div class="card">
+
+<h2>Operaciones con conjuntos</h2>
+
+<p>
+
+Las operaciones permiten combinar y comparar conjuntos.
+
+</p>
+
+<div class="formula">
+
+A = {1,2,3}
+<br><br>
+B = {3,4,5}
+
+</div>
+
+<div class="venn">
+
+<div class="circulo a">
+A
+</div>
+
+<div class="circulo b">
+B
+</div>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<h2>Tipos de operaciones</h2>
+
+<div class="formula">
+
+🔹 Unión ( ∪ )
+<br>
+Une todos los elementos.
+
+</div>
+
+<div class="formula">
+
+🔹 Intersección ( ∩ )
+<br>
+Elementos en común.
+
+</div>
+
+<div class="formula">
+
+🔹 Diferencia ( - )
+<br>
+Elementos exclusivos.
+
+</div>
+
+<div class="formula">
+
+🔹 Diferencia Simétrica ( △ )
+<br>
+Elementos diferentes.
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================================================= -->
+<!-- PAGINA EJERCICIOS -->
+<!-- ================================================= -->
+
+<section id="ejercicios">
+
+<div class="container">
+
+<!-- EJERCICIO 1 -->
+
+<div class="card">
+
+<h2>🎯 Ejercicio 1</h2>
+
+<p>
+
+Si:
+<br><br>
+
+A = {1,2,3}
+<br>
+B = {3,4,5}
+
+<br><br>
+
+¿Cuál es A ∩ B ?
+
+</p>
+
+<div class="opciones">
+
+<div class="opcion"
+onclick="respuesta(this,false)">
+{1,2}
+</div>
+
+<div class="opcion"
+onclick="respuesta(this,true)">
+{3}
+</div>
+
+<div class="opcion"
+onclick="respuesta(this,false)">
+{4,5}
+</div>
+
+<div class="opcion"
+onclick="respuesta(this,false)">
+{1,2,3}
+</div>
+
+</div>
+
+</div>
+
+<!-- EJERCICIO 2 -->
+
+<div class="card">
+
+<h2>🧠 Ejercicio 2</h2>
+
+<p>
+
+Si:
+<br><br>
+
+A = {a,b,c}
+<br>
+B = {c,d,e}
+
+<br><br>
+
+¿Cuál es la unión?
+
+</p>
+
+<input type="text"
+id="union">
+
+<button class="btn"
+onclick="verificarUnion()">
+
+Verificar
+
+</button>
+
+<div class="resultado"
+id="resultadoUnion">
+
+</div>
+
+</div>
+
+<!-- EJERCICIO 3 -->
+
+<div class="card">
+
+<h2>🔥 Ejercicio 3</h2>
+
+<p>
+
+Escribe una vocal
+que pertenezca al conjunto:
+
+</p>
+
+<div class="formula">
+
+V = {a,e,i,o,u}
+
+</div>
+
+<input type="text"
+id="vocal">
+
+<button class="btn"
+onclick="verificarVocal()">
+
+Comprobar
+
+</button>
+
+<div class="resultado"
+id="resultadoVocal">
+
+</div>
+
+</div>
+
+<!-- SCORE -->
+
+<div class="card">
+
+<h2>🏆 Puntaje</h2>
+
+<div class="score">
+
+⭐ Puntos:
+<span id="puntos">
+0
+</span>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+<div class="modal fade"
+id="modalVacio"
+tabindex="-1">
+
+<div class="modal-dialog modal-dialog-centered">
+
+<div class="modal-content">
+
+<div class="modal-header"
+style="background:#2F4156;color:white;">
+
+<h2 class="modal-title">
+⭕ Conjunto Vacío
+</h2>
+
+<button type="button"
+class="btn-close btn-close-white"
+data-bs-dismiss="modal">
+</button>
+
+</div>
+
+<div class="modal-body">
+
+<p>
+
+Un conjunto vacío es aquel que no tiene elementos.
+
+</p>
+
+<div class="formula">
+
+A = { }
+
+</div>
+
+<p>
+
+También se representa con el símbolo ∅.
+
+</p>
+
+</div>
+
+</div>
+</div>
+</div>
+
+<div class="modal fade"
+id="modalUnitario"
+tabindex="-1">
+
+<div class="modal-dialog modal-dialog-centered">
+
+<div class="modal-content">
+
+<div class="modal-header"
+style="background:#567C8D;color:white;">
+
+<h2 class="modal-title">
+🔵 Conjunto Unitario
+</h2>
+
+<button type="button"
+class="btn-close btn-close-white"
+data-bs-dismiss="modal">
+</button>
+
+</div>
+
+<div class="modal-body">
+
+<p>
+
+Tiene solamente un elemento.
+
+</p>
+
+<div class="formula">
+
+B = {5}
+
+</div>
+
+<p>
+
+Solo contiene un único elemento.
+
+</p>
+
+</div>
+
+</div>
+</div>
+</div>
+
+<div class="modal fade"
+id="modalFinito"
+tabindex="-1">
+
+<div class="modal-dialog modal-dialog-centered">
+
+<div class="modal-content">
+
+<div class="modal-header"
+style="background:#567C8D;color:white;">
+
+<h2 class="modal-title">
+🔢 Conjunto Finito
+</h2>
+
+<button type="button"
+class="btn-close btn-close-white"
+data-bs-dismiss="modal">
+</button>
+
+</div>
+
+<div class="modal-body">
+
+<p>
+
+Es un conjunto con una cantidad limitada de elementos.
+
+</p>
+
+<div class="formula">
+
+C = {1,2,3,4}
+
+</div>
+
+</div>
+
+</div>
+</div>
+</div>
+
+<div class="modal fade"
+id="modalInfinito"
+tabindex="-1">
+
+<div class="modal-dialog modal-dialog-centered">
+
+<div class="modal-content">
+
+<div class="modal-header"
+style="background:#2F4156;color:white;">
+
+<h2 class="modal-title">
+♾️ Conjunto Infinito
+</h2>
+
+<button type="button"
+class="btn-close btn-close-white"
+data-bs-dismiss="modal">
+</button>
+
+</div>
+
+<div class="modal-body">
+
+<p>
+
+Tiene infinitos elementos.
+
+</p>
+
+<div class="formula">
+
+N = {1,2,3,4,5...}
+
+</div>
+
+<p>
+
+Los números naturales son infinitos.
+
+</p>
+
+</div>
+
+</div>
+</div>
+</div>
+
+<!-- PIE DE PAGINA -->
+      <footer id="contacto">
+
+        <!-- CONTENEDOR FOOTER -->
+        <div class="footer-contenido">
+
+            <!-- LOGO -->
+            <div class="footer-logo">
+
+                <img src="Logo Mariano Galve.png" alt="Logo">
+
+            </div>
+
+            <!-- INFORMACION GENERAL -->
+            <div class="footer-info">
+
+                <h2>Contactos</h2>
+
+                <p>Correo: logica@sistemas.com</p>
+
+                <p>Teléfono: +502 0000-0000</p>
+
+
+            </div>
+
+        </div>
+
+        <!-- PARTICIPANTES -->
+
+        <div class="integrantes">
+
+            <!-- PARTICIPANTE 1 -->
+            <div class="persona">
+
+                <h3>Nahum Gamaliel Chun Ramirez</h3>
+
+                <p>Carnet: 0903-26-9546</p>
+
+                <!-- ICONOS -->
+                <div class="redes">
+
+                    <!-- GMAIL -->
+                    <a href="mailto:Nahumfkiller.555@gmail.com">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+
+                    <!-- WHATSAPP -->
+                    <a href="https://wa.me/50230736551" target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+
+                    
+
+                    
+
+                </div>
+
+            </div>
+
+            <!-- PARTICIPANTE 2 -->
+            <div class="persona">
+
+                <h3>Milhen Josué Fuentes Velásquez</h3>
+
+                <p>Carnet: 0903-26-996</p>
+
+                <div class="redes">
+
+                    <a href="mailto:fuentesjosue064@gmail.com ">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+
+                    <a href="https://wa.me/50246036109 " target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+
+                    <a href="https://www.instagram.com/velasquez496_/" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    
+
+                </div>
+
+            </div>
+
+            <!-- PARTICIPANTE 3 -->
+            <div class="persona">
+
+                <h3>Diana Fernanda Barrios Ramírez </h3>
+
+                <p>Carnet: 0903-26-7778 </p>
+
+                <div class="redes">
+
+                    <a href="mailto:barriosramirezdianafernanda@gmail.com">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+
+                    <a href="https://wa.me/50259353308 " target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+
+                    <a href="https://www.instagram.com/fr.ch__/" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    
+
+                </div>
+
+            </div>
+
+            <!-- PARTICIPANTE 4 -->
+            <div class="persona">
+
+                <h3>Francisco Javier González Velásquez</h3>
+
+                <p>Carnet: 0903-26-3434</p>
+
+                <div class="redes">
+
+                    <a href="mailto:Javiervelazques67@gmail.com">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+
+                    <a href="https://wa.me/50232764031" target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+
+                    
+
+                </div>
+
+            </div>
+
+            <!-- PARTICIPANTE 5 -->
+            <div class="persona">
+
+                <h3>Janeth Darlyne Orozco de León 5</h3>
+
+                <p>Carnet: 0903-26-5297</p>
+
+                <div class="redes">
+
+                    <a href="mailto:Janeth@gmail.com">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+
+                    <a href="https://wa.me/50239114599" target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+
+                    <a href="https://www.instagram.com/janeth.d_o?igsh=bnVnajVhMHkydTQ5" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- PARTICIPANTE 6 -->
+            <div class="persona">
+
+                <h3>Pedro Andres Navarro Merida</h3>
+
+                <p>Carnet: 0903-26-12272</p>
+
+                <div class="redes">
+
+                    <a href="mailto:andres2007navarro@gmail.com">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+
+                    <a href="https://wa.me/50240447726" target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+
+                    <a href="https://www.instagram.com/andres_2906__/" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+<script src="Tema6.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

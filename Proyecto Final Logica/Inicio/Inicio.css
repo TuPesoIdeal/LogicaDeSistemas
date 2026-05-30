@@ -1,0 +1,311 @@
+/* CONFIGURACION GENERAL */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* SCROLL SUAVE */
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #FFFFFF;
+}
+
+/* ENCABEZADO */
+
+.header{
+
+    /* HACER EL HEADER FIJO */
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+
+    /* COLOR DEL HEADER */
+    background-color: #2F4156;
+
+    /* ORGANIZACION */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 30px 50px;
+
+    /* SOMBRA */
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
+
+    z-index: 1000;
+}
+
+/* LOGO */
+.logo img{
+
+    width: 100px;
+    height: 100px;
+
+    border-radius: 50%;
+
+    object-fit: cover;
+}
+
+/* TITULO */
+.titulo h1{
+
+    color: #FFFFFF;
+
+    font-size: 50px;
+}
+
+/* MENU */
+.menu{
+
+    display: flex;
+    gap: 20px;
+}
+
+/* BOTONES */
+.menu a{
+
+    text-decoration: none;
+
+    background-color: #567CBD;
+
+    color: #FFFFFF;
+
+    padding: 20px 30px;
+
+    border-radius: 10px;
+
+    transition: 0.3s;
+}
+
+/* EFECTO BOTONES */
+.menu a:hover{
+
+    background-color: #C8D9E6;
+
+    color: black;
+
+    transform: scale(1.05);
+}
+
+/* CONTENEDOR TEMAS */
+.contenedor-temas{
+
+    width: 90%;
+
+    margin: auto;
+
+    padding-top: 180px;
+    padding-bottom: 100px;
+
+    /* GRID */
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 40px;
+
+    justify-items: center;
+}
+
+/* TEMAS */
+.card{
+
+    width: 320px;
+
+    background-color: white;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    text-decoration: none;
+
+    color: black;
+
+    /* SOMBRA */
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.2);
+
+    transition: 0.4s;
+}
+
+/* IMAGEN */
+.card img{
+
+    width: 100%;
+    height: 220px;
+
+    object-fit: cover;
+}
+
+/* TITULO */
+
+
+/* EFECTO HOVER */
+.card:hover{
+
+    transform: scale(1.05);
+
+    box-shadow: 0px 0px 25px #C8D9E6;
+}
+
+/* ULTIMA TARJETA CENTRADA */
+.ultima-card{
+
+    grid-column: 2 / 3;
+}
+
+/* FOOTER */
+
+footer{
+
+    background-color: #2F4156;
+
+    color: white;
+
+    padding: 50px 30px;
+}
+
+/* CONTENIDO SUPERIOR FOOTER */
+.footer-contenido{
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 50px;
+}
+
+/* LOGO FOOTER */
+.footer-logo img{
+
+    width: 100px;
+
+    border-radius: 50%;
+}
+
+/* TEXTO FOOTER */
+.footer-info{
+
+    text-align: center;
+}
+
+/* INTEGRANTES */
+.integrantes{
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 30px;
+}
+
+/* TARJETA PERSONA */
+.persona{
+
+    background-color: rgba(255,255,255,0.1);
+
+    padding: 20px;
+
+    border-radius: 15px;
+
+    text-align: center;
+
+    transition: 0.3s;
+}
+
+/* EFECTO */
+.persona:hover{
+
+    transform: translateY(-5px);
+
+    box-shadow: 0px 0px 15px #C8D9E6;
+}
+
+/* ICONOS */
+.redes{
+
+    margin-top: 15px;
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 15px;
+}
+
+/* ICONOS INDIVIDUALES */
+.redes a{
+
+    color: white;
+
+    font-size: 24px;
+
+    transition: 0.3s;
+}
+
+/* HOVER ICONOS */
+.redes a:hover{
+
+    color: #C8D9E6;
+
+    transform: scale(1.2);
+}
+
+/* RESPONSIVE */
+@media(max-width: 900px){
+
+    .contenedor-temas{
+
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .integrantes{
+
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .ultima-card{
+
+        grid-column: auto;
+    }
+}
+
+@media(max-width: 600px){
+
+    .header{
+
+        flex-direction: column;
+
+        gap: 20px;
+    }
+
+    .contenedor-temas{
+
+        grid-template-columns: 1fr;
+    }
+
+    .integrantes{
+
+        grid-template-columns: 1fr;
+    }
+
+    .card{
+
+        width: 90%;
+    }
+
+    .titulo h1{
+
+        font-size: 24px;
+    }
+}

@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reglas de Proporcionalidad</title>
+    <link rel="stylesheet" href="Tema9.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <header>
+
+         <!-- LOGO -->
+         <div class="logo">
+            <img src="Logo Mariano Galve.png" alt="Logo Universidad">
+         </div>
+         <div class="titulo">
+    <h1>Reglas de Proporcionalidad</h1>
+    <p>Lógica de sistemas</p>
+    </div>
+
+    <!-- MENU -->
+        <nav class="menu">
+
+            <a href="../Inicio/Inicio.html">Inicio</a>
+
+            <!-- AL DAR CLIC BAJA A LOS TEMAS -->
+            <a href="../Inicio/Inicio.html#temas">Temas</a>
+
+            <!-- AL DAR CLIC BAJA AL CONTACTO -->
+            <a href="#contacto">Contacto</a>
+
+        </nav>
+</header>
+
+<nav>
+    <a href="#concepto">Concepto</a>
+    <a href="#directa">Directa</a>
+    <a href="#inversa">Inversa</a>
+    <a href="#calculadora">Calculadora</a>
+</nav>
+
+<section id="concepto">
+    <div class="card">
+        <h2>¿Qué es la proporcionalidad?</h2>
+        <p>
+            La proporcionalidad es una relación entre dos o más cantidades.
+            Sirve para comparar valores y determinar cómo cambia una cantidad
+            cuando otra aumenta o disminuye.
+        </p>
+
+        <div class="formula">
+            a / b = c / d
+        </div>
+
+        <p>
+            Esta regla se utiliza mucho en matemáticas, programación, economía,
+            lógica de sistemas, escalas, porcentajes y resolución de problemas.
+        </p>
+    </div>
+</section>
+
+<section id="directa">
+    <div class="card">
+        <h2>Proporcionalidad Directa</h2>
+        <p>
+            Dos cantidades son directamente proporcionales cuando al aumentar una,
+            la otra también aumenta en la misma proporción.
+        </p>
+
+        <div class="formula">
+            Más cantidad → Más resultado
+        </div>
+
+        <p><b>Ejemplo:</b> Si 2 cuadernos cuestan Q20, entonces 4 cuadernos cuestan Q40.</p>
+
+        <button onclick="mostrarDirecta()">Ver explicación</button>
+        <p id="expDirecta" class="resultado"></p>
+    </div>
+</section>
+
+<section id="inversa">
+    <div class="card">
+        <h2>Proporcionalidad Inversa</h2>
+        <p>
+            Dos cantidades son inversamente proporcionales cuando al aumentar una,
+            la otra disminuye.
+        </p>
+
+        <div class="formula">
+            Más trabajadores → Menos tiempo
+        </div>
+
+        <p><b>Ejemplo:</b> Si 2 personas hacen un trabajo en 8 horas, 4 personas lo hacen en 4 horas.</p>
+
+        <button onclick="mostrarInversa()">Ver explicación</button>
+        <p id="expInversa" class="resultado"></p>
+    </div>
+</section>
+
+<section id="calculadora">
+    <div class="card">
+        <h2>Calculadora de Regla de Tres Directa</h2>
+        <p>Completa los datos para encontrar el valor desconocido.</p>
+
+        <div class="formula">
+            A → B <br>
+            C → X
+        </div>
+
+        <input type="number" id="a" placeholder="A">
+        <input type="number" id="b" placeholder="B">
+        <input type="number" id="c" placeholder="C">
+
+        <br>
+
+        <button onclick="calcular()">Calcular X</button>
+
+        <p id="resultado" class="resultado"></p>
+    </div>
+</section>
+
+<!-- PIE DE PAGINA -->
+      <footer id="contacto">
+
+        <!-- CONTENEDOR FOOTER -->
+        <div class="footer-contenido">
+
+            <!-- LOGO -->
+            <div class="footer-logo">
+
+                <img src="Logo Mariano Galve.png" alt="Logo">
+
+            </div>
+
+            <!-- INFORMACION GENERAL -->
+            <div class="footer-info">
+
+                <h2>Contactos</h2>
+
+                <p>Correo: logica@sistemas.com</p>
+
+                <p>Teléfono: +502 0000-0000</p>
+
+
+            </div>
+
+        </div>
+
+        <!-- PARTICIPANTES -->
+
+        <div class="integrantes">
+
+            <!-- PARTICIPANTE 1 -->
+            <div class="persona">
+
+                <h3>Nahum Gamaliel Chun Ramirez</h3>
+
+                <p>Carnet: 0903-26-9546</p>
+
+                <!-- ICONOS -->
+                <div class="redes">
+
+                    <!-- GMAIL -->
+                    <a href="mailto:Nahumfkiller.555@gmail.com">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+
+                    <!-- WHATSAPP -->
+                    <a href="https://wa.me/50230736551" target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+
+                    
+
+                    
+
+                </div>
+
+            </div>
+
+            <!-- PARTICIPANTE 2 -->
+            <div class="persona">
+
+                <h3>Milhen Josué Fuentes Velásquez</h3>
+
+                <p>Carnet: 0903-26-996</p>
+
+                <div class="redes">
+
+                    <a href="mailto:fuentesjosue064@gmail.com ">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+
+                    <a href="https://wa.me/50246036109 " target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+
+                    <a href="https://www.instagram.com/velasquez496_/" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    
+
+                </div>
+
+            </div>
+
+            <!-- PARTICIPANTE 3 -->
+            <div class="persona">
+
+                <h3>Diana Fernanda Barrios Ramírez </h3>
+
+                <p>Carnet: 0903-26-7778 </p>
+
+                <div class="redes">
+
+                    <a href="mailto:barriosramirezdianafernanda@gmail.com">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+
+                    <a href="https://wa.me/50259353308 " target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+
+                    <a href="https://www.instagram.com/fr.ch__/" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    
+
+                </div>
+
+            </div>
+
+            <!-- PARTICIPANTE 4 -->
+            <div class="persona">
+
+                <h3>Francisco Javier González Velásquez</h3>
+
+                <p>Carnet: 0903-26-3434</p>
+
+                <div class="redes">
+
+                    <a href="mailto:Javiervelazques67@gmail.com">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+
+                    <a href="https://wa.me/50232764031" target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+
+                    
+
+                </div>
+
+            </div>
+
+            <!-- PARTICIPANTE 5 -->
+            <div class="persona">
+
+                <h3>Janeth Darlyne Orozco de León 5</h3>
+
+                <p>Carnet: 0903-26-5297</p>
+
+                <div class="redes">
+
+                    <a href="mailto:Janeth@gmail.com">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+
+                    <a href="https://wa.me/50239114599" target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+
+                    <a href="https://www.instagram.com/janeth.d_o?igsh=bnVnajVhMHkydTQ5" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- PARTICIPANTE 6 -->
+            <div class="persona">
+
+                <h3>Pedro Andres Navarro Merida</h3>
+
+                <p>Carnet: 0903-26-12272</p>
+
+                <div class="redes">
+
+                    <a href="mailto:andres2007navarro@gmail.com">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+
+                    <a href="https://wa.me/50240447726" target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+
+                    <a href="https://www.instagram.com/andres_2906__/" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+<script src="Tema9.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clasificación de Proposiciones</title>
+    <link rel="stylesheet" href="Tema2.css">
+    <!-- ICONOS DE FONT AWESOME -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    
+<body>
+
+<header>
+
+    <!-- LOGO -->
+         <div class="logo">
+            <img src="Logo Mariano Galve.png" alt="Logo Universidad">
+         </div>
+<div class="titulo">
+    <h1>Clasificación de Proposiciones</h1>
+    <p>Lógica de sistemas</p>
+</div>
+<!-- MENU -->
+        <nav class="menu">
+
+            <a href="../Inicio/Inicio.html">Inicio</a>
+
+            <!-- AL DAR CLIC BAJA A LOS TEMAS -->
+            <a href="../Inicio/Inicio.html#temas">Temas</a>
+
+            <!-- AL DAR CLIC BAJA AL CONTACTO -->
+            <a href="#contacto">Contacto</a>
+
+        </nav>
+
+</header>
+
+<nav>
+    <a href="#concepto">Concepto</a>
+    <a href="#clasificacion">Clasificación</a>
+    <a href="#ejemplos">Ejemplos</a>
+    <a href="#actividad">Actividad</a>
+</nav>
+
+<section id="concepto">
+    <div class="card">
+        <h2>¿Qué es una proposición?</h2>
+        <p>
+            Una proposición es una oración o enunciado que puede ser verdadero o falso,
+            pero no ambos al mismo tiempo. En lógica, las proposiciones sirven para
+            construir razonamientos, condiciones y estructuras de decisión.
+        </p>
+
+        <div class="formula">
+            Proposición = Enunciado con valor de verdad
+        </div>
+
+        <p>
+            Ejemplo: “El número 8 es par”. Esta oración es una proposición porque
+            puede determinarse si es verdadera o falsa.
+        </p>
+    </div>
+</section>
+
+<section id="clasificacion">
+    <div class="card">
+        <h2>Clasificación principal</h2>
+
+        <div class="grid">
+            <div class="mini-card">
+                <h3>Proposición Simple</h3>
+                <p>
+                    Es aquella que expresa una sola idea y no contiene conectores lógicos.
+                </p>
+                <button onclick="simple()">Ver ejemplo</button>
+                <p id="simple" class="resultado"></p>
+            </div>
+
+            <div class="mini-card">
+                <h3>Proposición Compuesta</h3>
+                <p>
+                    Está formada por dos o más proposiciones simples unidas por conectores lógicos.
+                </p>
+                <button onclick="compuesta()">Ver ejemplo</button>
+                <p id="compuesta" class="resultado"></p>
+            </div>
+
+            <div class="mini-card">
+                <h3>Proposición Verdadera</h3>
+                <p>
+                    Es un enunciado cuyo valor lógico corresponde a la realidad.
+                </p>
+                <button onclick="verdadera()">Ver ejemplo</button>
+                <p id="verdadera" class="resultado"></p>
+            </div>
+
+            <div class="mini-card">
+                <h3>Proposición Falsa</h3>
+                <p>
+                    Es un enunciado cuyo valor lógico no corresponde a la realidad.
+                </p>
+                <button onclick="falsa()">Ver ejemplo</button>
+                <p id="falsa" class="resultado"></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="ejemplos">
+    <div class="card">
+        <h2>Conectores lógicos más usados</h2>
+
+        <div class="formula">
+            Y = Conjunción
+        </div>
+
+        <div class="formula">
+            O = Disyunción
+        </div>
+
+        <div class="formula">
+            No = Negación
+        </div>
+
+        <div class="formula">
+            Si... entonces = Condicional
+        </div>
+
+        <p>
+            Estos conectores permiten construir proposiciones compuestas dentro de la lógica.
+        </p>
+    </div>
+</section>
+
+<section id="actividad">
+    <div class="card">
+        <h2>Actividad Interactiva</h2>
+        <p>Analiza el siguiente enunciado:</p>
+
+        <div class="formula">
+            “El sistema recibe datos y procesa información.”
+        </div>
+
+        <p>¿Qué tipo de proposición es?</p>
+
+        <button onclick="respuesta()">Ver respuesta</button>
+
+        <p id="respuesta" class="resultado"></p>
+    </div>
+</section>
+
+<!-- PIE DE PAGINA -->
+      <footer id="contacto">
+
+        <!-- CONTENEDOR FOOTER -->
+        <div class="footer-contenido">
+
+            <!-- LOGO -->
+            <div class="footer-logo">
+
+                <img src="Logo Mariano Galve.png" alt="Logo">
+
+            </div>
+
+            <!-- INFORMACION GENERAL -->
+            <div class="footer-info">
+
+                <h2>Contactos</h2>
+
+                <p>Correo: logica@sistemas.com</p>
+
+                <p>Teléfono: +502 0000-0000</p>
+
+
+            </div>
+
+        </div>
+
+        <!-- PARTICIPANTES -->
+
+        <div class="integrantes">
+
+            <!-- PARTICIPANTE 1 -->
+            <div class="persona">
+
+                <h3>Nahum Gamaliel Chun Ramirez</h3>
+
+                <p>Carnet: 0903-26-9546</p>
+
+                <!-- ICONOS -->
+                <div class="redes">
+
+                    <!-- GMAIL -->
+                    <a href="mailto:Nahumfkiller.555@gmail.com">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+
+                    <!-- WHATSAPP -->
+                    <a href="https://wa.me/50230736551" target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+
+                    
+
+                    
+
+                </div>
+
+            </div>
+
+            <!-- PARTICIPANTE 2 -->
+            <div class="persona">
+
+                <h3>Milhen Josué Fuentes Velásquez</h3>
+
+                <p>Carnet: 0903-26-996</p>
+
+                <div class="redes">
+
+                    <a href="mailto:fuentesjosue064@gmail.com ">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+
+                    <a href="https://wa.me/50246036109 " target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+
+                    <a href="https://www.instagram.com/velasquez496_/" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    
+
+                </div>
+
+            </div>
+
+            <!-- PARTICIPANTE 3 -->
+            <div class="persona">
+
+                <h3>Diana Fernanda Barrios Ramírez </h3>
+
+                <p>Carnet: 0903-26-7778 </p>
+
+                <div class="redes">
+
+                    <a href="mailto:barriosramirezdianafernanda@gmail.com">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+
+                    <a href="https://wa.me/50259353308 " target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+
+                    <a href="https://www.instagram.com/fr.ch__/" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    
+
+                </div>
+
+            </div>
+
+            <!-- PARTICIPANTE 4 -->
+            <div class="persona">
+
+                <h3>Francisco Javier González Velásquez</h3>
+
+                <p>Carnet: 0903-26-3434</p>
+
+                <div class="redes">
+
+                    <a href="mailto:Javiervelazques67@gmail.com">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+
+                    <a href="https://wa.me/50232764031" target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+
+                    
+
+                </div>
+
+            </div>
+
+            <!-- PARTICIPANTE 5 -->
+            <div class="persona">
+
+                <h3>Janeth Darlyne Orozco de León 5</h3>
+
+                <p>Carnet: 0903-26-5297</p>
+
+                <div class="redes">
+
+                    <a href="mailto:Janeth@gmail.com">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+
+                    <a href="https://wa.me/50239114599" target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+
+                    <a href="https://www.instagram.com/janeth.d_o?igsh=bnVnajVhMHkydTQ5" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- PARTICIPANTE 6 -->
+            <div class="persona">
+
+                <h3>Pedro Andres Navarro Merida</h3>
+
+                <p>Carnet: 0903-26-12272</p>
+
+                <div class="redes">
+
+                    <a href="mailto:andres2007navarro@gmail.com">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+
+                    <a href="https://wa.me/50240447726" target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+
+                    <a href="https://www.instagram.com/andres_2906__/" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    
+
+                </div>
+
+            </div>
+
+        </div>
+</footer>
+
+<script src="Tema2.js"></script>
+
+</body>
+</html>
